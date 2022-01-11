@@ -1,0 +1,70 @@
+<%- include ("partials/header.ejs")%>
+<body>
+    <%- include ("partials/navbar.ejs")%>
+    <div class="container">
+        <div class="card">
+        <div class="card-header">
+            <hr>
+            <h3>Editar Livros</h3>
+            <hr>
+
+        </div>
+            
+
+
+                <div class="card-body">
+
+
+                    <div style="font: normal 22px Arial;" class="card-header">
+                        Editando o ID
+                    </div>
+
+                    <form action="/editandoa" method="post"> 
+
+                        <h6>Digite o ID do livro que seja editar</h6> 
+                        <input placeholder="ID" type="number" name="idl" class="form-control"><br>
+                        <h6>Digite o Novo ID </h6>
+                    <input placeholder="Novo ID" type="text" name="edia" class="form-control">
+                    <button style="background-color: turquoise; border-radius: 8px;" >Edit ID  </button><br><br>
+
+                </form><br><br>
+                <div style="font: normal 22px Arial;" class="card-header">
+                    Editando o Nome do Livro
+                </div><br>
+
+                <form action="/editandob" method="post">
+
+                    <h6>Digite o ID do livro que seja editar</h6> 
+                    <input placeholder="ID" type="number" name="idl" class="form-control"><br>
+                    <h6>Digite o Novo Nome do Livro</h6>
+                 <input placeholder="Novo Nome do Livro" type="text" name="edib" class="form-control">
+                <button style="background-color: turquoise; border-radius: 8px;" >Edit Livro </button><br><br>
+
+            </form><br><br>
+            <div style="font: normal 22px Arial;" class="card-header">
+                Editando o Nome do Autor
+            </div>
+
+            <form action="/editandoc" method="post">
+                <h6>Digite o ID do livro que seja editar</h6> 
+                <input placeholder="ID" type="number" name="idl" class="form-control"><br>
+                <h6>Digite o Novo Nome do Autor</h6>
+
+            <input placeholder="Novo Nome do Autor" type="text" name="edic" class="form-control">
+            <button style="background-color: turquoise; border-radius: 8px;" >Edit Nome do Autor </button><br><br>
+
+        </form>
+                </div>
+
+            
+
+        
+    </div>
+<br><br><br>
+        <p style="font: normal 12px Times;">Grande poder esta função tem <br> Proceder com cuidado você deve!</p>
+    </div>
+    
+
+</body>
+
+<%- include ("partials/footer.ejs")%>

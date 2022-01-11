@@ -1,0 +1,22 @@
+<%- include ("partials/header.ejs")%>
+<body>
+    <%- include ("partials/navbar.ejs")%>
+    <div class="container">
+        <hr>
+        <h3>Excluir livros</h3>
+        <hr>
+        <h6>Digite o nome do dito cujo</h6>
+        <hr>
+        <form action="/excluir" method="post">
+            <input placeholder="Livro" type="text" name="delete">
+            <button>Excluir</button>
+        </form>
+        
+<br><br><br>
+        <p style="font: normal 12px Times;">Grande poder esta função tem <br> Proceder com cuidado você deve!</p>
+    </div>
+    
+
+</body>
+
+<%- include ("partials/footer.ejs")%>

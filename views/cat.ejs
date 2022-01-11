@@ -1,0 +1,41 @@
+<%- include ("partials/header.ejs")%>
+<body>
+    <%- include ("partials/navbar.ejs")%>
+    <div class="container">
+
+        <h1>Catálogo</h1>
+        <div class="card">
+           
+            <div class="card-body">
+                
+                <table class="table" border="1">
+                    <tr>
+                        <th>ID</th>
+                        <th>Livro</th>
+                        <th>Autor</th>
+                    </tr>
+                    <tr>
+                    <% livro.forEach(peglivro => { %>
+                    <th> <%= peglivro.id%></th>
+                    <th><%= peglivro.livro%></th>
+                    <th><%= peglivro.autor%></th>
+                </tr>
+                    <% }) %>
+                </table>
+                </div>
+           
+
+            <div class="card-footer">
+    
+    
+            </div>
+    
+        </div>
+
+    </div>
+
+
+
+
+</body>
+<%- include ("partials/footer.ejs")%>

@@ -1,0 +1,36 @@
+<%- include ("partials/header.ejs")%>
+<body>
+    <%- include ("partials/navbar.ejs")%>
+    <div class="container">
+        <div class="card">
+        <div class="card-header">
+            <hr>
+            <h3>Adicionar livros</h3>
+            <hr>
+
+        </div>
+            
+                <div class="card-body">
+                    <form action="/adicionando" method="post">
+
+                    <h6>Digite o nome do livro</h6> 
+                    <input placeholder="Livro" type="text" name="li" class="form-control"><br><br>
+                    <h6>Digite o nome do autor</h6>
+                    <input placeholder="Autor" type="text" name="aut" class="form-control"><br><br>
+        
+                    <button style="background-color: turquoise; border-radius: 8px;">Adicionar</button>
+                </form>
+                </div>
+
+            
+
+        
+    </div>
+<br><br><br>
+        <p style="font: normal 12px Times;">Grande poder esta função tem <br> Proceder com cuidado você deve!</p>
+    </div>
+    
+
+</body>
+
+<%- include ("partials/footer.ejs")%>
